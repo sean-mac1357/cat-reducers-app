@@ -1,18 +1,16 @@
-import { ACTION_NAPPING, ACTION_EATING, ACTION_PLAYING } from './actionTypes';
+import { ACTION_SET_NAME, ACTION_SET_ACTIVITY } from './actionTypes';
 
-export const activity = (state, action) => {
+export const cat = (state, action) => {
     switch(action.type) {
-        case ACTION_NAPPING:
+        case ACTION_SET_NAME:
             return {
-                activity: 'napping'
+                ...state,
+                name: action.payload.name
             }
-        case ACTION_EATING:
+        case ACTION_SET_ACTIVITY:
             return {
-                activity: 'eating'
-            }
-        case ACTION_PLAYING:
-            return {
-                activity: 'playing'
+                ...state,
+                activity: action.payload.activity,
             }
         default:
             return state;

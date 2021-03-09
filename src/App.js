@@ -1,7 +1,9 @@
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import ActivityApp from './components/ActivityApp'
+import Activity from './components/Activity';
+import ChangeName from './components/ChangeName';
 import './App.css';
+import ActivityButton from './components/ActivityButton';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
         <header className="App-header">
           <h1>Meow App</h1>
         </header>
-        <ActivityApp />
+        <ChangeName />
+        <Activity />
+        <ActivityButton />
       </div>
     </Provider>
   );

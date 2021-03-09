@@ -1,3 +1,2 @@
-export const ACTION_EATING = 'eating';
-export const ACTION_NAPPING = 'napping';
-export const ACTION_PLAYING = 'playing';
+export const ACTION_SET_NAME = 'ACTION_SET_NAME';
+export const ACTION_SET_ACTIVITY = 'ACTION_SET_ACTIVITY';

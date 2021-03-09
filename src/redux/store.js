@@ -1,12 +1,13 @@
 import { createStore } from 'redux';
-import { activity } from './reducers';
+import { cat } from './reducers';
 
 const defaultState = {
-    activity: "terrorizing"
+    name: 'Guster',
+    activity: "Terrorizing"
 }
 
 export const store = createStore(
-    activity,
+    cat,
     defaultState,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
