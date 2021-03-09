@@ -2,8 +2,16 @@ import { createStore } from 'redux';
 import { cat } from './reducers';
 
 const defaultState = {
-    name: 'Guster',
-    activity: "Terrorizing"
+    cats: {
+        '1001': {
+            name: 'Peaches',
+            activity: "Terrorizing"
+        },
+        '1002': {
+            name: 'Special-K',
+            activity: "Terrorizing"
+        },
+    },
 }
 
 export const store = createStore(

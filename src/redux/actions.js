@@ -1,19 +1,25 @@
-import { ACTION_SET_NAME, ACTION_SET_ACTIVITY } from './actionTypes';
+import { ACTION_SET_ADD_CAT, ACTION_SET_ACTIVITY } from './actionTypes';
 
-export const setName = (name) => {
+
+export const setActivity = (id, activity) => {
     return {
-        type: ACTION_SET_NAME,
+        type: ACTION_SET_ACTIVITY,
         payload: {
-            name
+            id,
+            activity
+            
         }
     }
 }
 
-export const setActivity = (activity) => {
+export const setAddCat = (addCat) => {
+    const id = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
     return {
-        type: ACTION_SET_ACTIVITY,
+        type: ACTION_SET_ADD_CAT,
         payload: {
-            activity
-        }
+            id,
+            addCat
+            
+        } 
     }
 }
